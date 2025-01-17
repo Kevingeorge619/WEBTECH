@@ -1,31 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
 </head>
 <body>
-    <title>Profile</title>
-    <h1><center>My Profile</center></h1>
-    <center><img src="test.jpg" alt="" width="300" height="300"></center>
-    <H2><center>Kevin George</center></H2>
-    <p><center>My name is Kevin George and I am currently studying MCA in Rajagiri College of Social Sciences</center></p>
-    <br>
-    <h3><center><u>Interest</u></center></h4>
-    <center>
-        <p>
-        <ul>playing football</ul>
-        <ul>playing video games</ul>
-        </p>
-        <br>
-    <h3><u>Academic Background</u></h3>
-    <p>
-        <ul>Completed 10th in Emirates National School, Sharjah</ul>
-        <ul>Completed 12th in Good Shepherd Public School, Changanassery</ul>
-        <ul>Completed UG in CMS College of Science and Commerce, Coimbatore</ul>
-       
-    </p>
-    </center>
+  <h1>Weather App</h1>
+  <div>
+    <label for="city">Enter City: </label>
+    <input type="text" id="city" placeholder="City Name">
+    <button onclick="getWeather()">Get Weather</button>
+  </div>
+  <div id="weather">
+    <h2>Weather Info:</h2>
+    <p id="description"></p>
+    <p id="temperature"></p>
+  </div>
+
+  <script src="weather.js"></script>
 </body>
 </html>
